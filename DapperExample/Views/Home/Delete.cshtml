@@ -1,0 +1,12 @@
+﻿@model DapperExample.Models.EmployeeModel
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+@Model.EmpName<br />
+<form action="~/home/Delete/@Model.EmpId" method="post">
+    
+    <input type="submit" value="Delete" class="btn btn-success" />
+</form>

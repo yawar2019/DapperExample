@@ -1,0 +1,22 @@
+﻿@model List<LoginModel>
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<table class="table table-bordered table-responsive table-striped">
+    <tr>
+        <th>UserId</th>
+        <th>Name</th>
+        <th>Password</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.UserId</td>
+            <td>@item.UserName</td>
+            <td>@item.Password</td>
+        </tr>
+    }
+</table>
